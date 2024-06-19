@@ -2,6 +2,8 @@ pipeline {
 	agent {
 		docker {
 			image 'composer:latest'
+			args '-v /var/run/docker.sock:/var/run/docker.sock' // Optional: pass additional Docker arguments
+
 		}
 	}
 	stages {
