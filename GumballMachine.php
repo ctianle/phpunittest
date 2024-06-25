@@ -13,6 +13,9 @@ class GumballMachine {
 	}
 	
 	public function turnWheel() {
-		$this->setGumballs($this->getGumballs()-1);
+		// change 1 to 2 to introduce error.
+		// $this->setGumballs($this->getGumballs()-1);
+
+		$this->setGumballs($this->getGumballs()-2);
 	}
 }
